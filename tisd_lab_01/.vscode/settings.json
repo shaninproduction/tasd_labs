@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "iomanip": "cpp",
+        "chrono": "cpp",
+        "iosfwd": "cpp",
+        "thread": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp",
+        "valarray": "cpp",
+        "optional": "cpp",
+        "sstream": "cpp"
+    },
+
+    "code-runner.executorMap": {
+        "cpp": "clear && g++ -o $fileNameWithoutExt.exe $fullFileName && ./$fileNameWithoutExt.exe",
+        "c": "clear && gcc -Werror -Wall -std=c99 -Wpedantic -Wextra -Wfloat-equal -Wvla -o $fileNameWithoutExt.exe $(ls . | grep .c$) -lm && ./$fileNameWithoutExt.exe",
+        "python": "clear && python3 $fullFileName",
+        "go": "clear && go run $fullFileName"
+    }
+}
